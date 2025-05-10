@@ -1,0 +1,179 @@
+/* Genel ayarlar */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Başlık */
+header {
+  background-color: #b22222;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 40px;
+  margin: 0;
+}
+
+/* Navbar */
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Sayfa içeriği */
+main {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+main h2 {
+  font-size: 32px;
+  color: #b22222;
+  margin-bottom: 30px;
+}
+
+/* Footer */
+footer {
+  background-color: #eee;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+/* Görseller için estetik görünüm */
+img {
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+  margin: 10px;
+}
+
+img:hover {
+  transform: scale(1.03);
+  border-color: #b22222;
+}
+
+/* Menü sayfası kategorileri */
+.menu-category {
+  margin: 50px 0;
+}
+
+.menu-category h3 {
+  font-size: 32px;          /* Büyük puntolu */
+  font-weight: bold;        /* Kalın */
+  text-align: center;       /* Ortalanmış */
+  color: #000;              /* Siyah renk */
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+
+/* Menüdeki öğeleri kutular halinde yan yana diz */
+.menu-items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.menu-item {
+  width: 250px;
+  text-align: center;
+}
+
+.menu-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.menu-item p {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Form tasarımı */
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+form label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+form input,
+form select,
+form textarea,
+form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+form button {
+  background-color: #b22222;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+form button:hover {
+  background-color: #8b1a1a;
+}
+
+/* Responsive tasarım */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-items {
+    flex-direction: column;
+  }
+
+  .menu-item {
+    width: 90%;
+  }
+
+  form {
+    width: 90%;
+  }
+
+  img {
+    width: 90% !important;
+    height: auto !important;
+  }
+}
