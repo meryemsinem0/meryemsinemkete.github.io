@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Yorumlar - Lezzet Lokantası</title>
+  <link rel="stylesheet" href="../styles/style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Lezzet Lokantası</h1>
+    <nav>
+      <ul>
+       <li><a href="../index.html">Ana Sayfa</a></li>
+        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+        <li><a href="menu.html">Menü</a></li>
+        <li><a href="rezervasyon.html">Rezervasyon</a></li>
+        <li><a href="iletisim.html">İletişim</a></li>
+        <li><a href="siparis.html">Sipariş</a></li>
+        <li><a href="yorumlar.html">Yorumlar</a></li>
+        <li><a href="degerlendirme.html">Değerlendirme</a></li>
+        <li><a href="kampanyalar.html">Kampanyalar</a></li>
+        <li><a href="sss.html">SSS</a></li>
+        <li><a href="etkinlikler.html">Etkinlikler</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Müşteri Yorumları</h2>
+
+    <div id="yorumListesi" style="max-width: 600px; margin: 0 auto; text-align: left;">
+      <blockquote>
+        <p>"Lezzet Lokantası'nda yediğim Adana kebabı hayatımda yediğim en iyisiydi!"</p>
+        <cite>– Ahmet Y.</cite>
+      </blockquote>
+
+      <blockquote>
+        <p>"Mekân çok temiz ve personel ilgiliydi. Tatlılar harika, özellikle künefe!"</p>
+        <cite>– Elif T.</cite>
+      </blockquote>
+    </div>
+
+    <h3 style="margin-top: 50px;">Yorum Ekle</h3>
+    <form id="yorumForm">
+      <label for="yorumAd">Adınız:</label>
+      <input type="text" id="yorumAd" required>
+
+      <label for="yorumMetin">Yorumunuz:</label>
+      <textarea id="yorumMetin" rows="4" required></textarea>
+
+      <button type="submit">Gönder</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Lezzet Lokantası</p>
+  </footer>
+
+  <script src="../scripts/myscript.js"></script>
+</body>
+</html>

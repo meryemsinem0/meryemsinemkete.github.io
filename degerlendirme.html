@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Değerlendirme - Lezzet Lokantası</title>
+  <link rel="stylesheet" href="../styles/style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Lezzet Lokantası</h1>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Ana Sayfa</a></li>
+        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+        <li><a href="menu.html">Menü</a></li>
+        <li><a href="rezervasyon.html">Rezervasyon</a></li>
+        <li><a href="iletisim.html">İletişim</a></li>
+        <li><a href="siparis.html">Sipariş</a></li>
+        <li><a href="yorumlar.html">Yorumlar</a></li>
+        <li><a href="degerlendirme.html">Değerlendirme</a></li>
+        <li><a href="kampanyalar.html">Kampanyalar</a></li>
+        <li><a href="sss.html">SSS</a></li>
+        <li><a href="etkinlikler.html">Etkinlikler</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Memnuniyet Değerlendirmesi</h2>
+
+    <form id="puanForm">
+      <!-- Restoran Değerlendirmesi -->
+      <label><strong>Restoran ortamı:</strong></label><br>
+      <input type="radio" name="restoran" value="Mükemmel" required> Mükemmel
+      <input type="radio" name="restoran" value="İyi"> İyi
+      <input type="radio" name="restoran" value="Orta"> Orta
+      <input type="radio" name="restoran" value="Kötü"> Kötü<br><br>
+
+      <!-- Yemekler Değerlendirmesi -->
+      <label><strong>Yemek kalitesi:</strong></label><br>
+      <input type="radio" name="yemek" value="Mükemmel" required> Mükemmel
+      <input type="radio" name="yemek" value="İyi"> İyi
+      <input type="radio" name="yemek" value="Orta"> Orta
+      <input type="radio" name="yemek" value="Kötü"> Kötü<br><br>
+
+      <!-- Müzik Değerlendirmesi -->
+      <label><strong>Canlı müzik:</strong></label><br>
+      <input type="radio" name="muzik" value="Mükemmel" required> Mükemmel
+      <input type="radio" name="muzik" value="İyi"> İyi
+      <input type="radio" name="muzik" value="Orta"> Orta
+      <input type="radio" name="muzik" value="Kötü"> Kötü<br><br>
+
+      <!-- Yorum -->
+      <label for="yorum">Genel yorum (isteğe bağlı):</label>
+      <textarea id="yorum" rows="4"></textarea>
+
+      <button type="submit">Gönder</button>
+    </form>
+
+    <div id="sonuc" style="margin-top: 30px;"></div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Lezzet Lokantası</p>
+  </footer>
+
+  <script src="../scripts/myscript.js"></script>
+</body>
+</html>

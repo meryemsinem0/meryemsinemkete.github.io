@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sipariş Ver</title>
+  <link rel="stylesheet" href="../styles/style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Lezzet Lokantası</h1>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Ana Sayfa</a></li>
+        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+        <li><a href="menu.html">Menü</a></li>
+        <li><a href="rezervasyon.html">Rezervasyon</a></li>
+        <li><a href="iletisim.html">İletişim</a></li>
+        <li><a href="siparis.html">Sipariş</a></li>
+        <li><a href="yorumlar.html">Yorumlar</a></li>
+        <li><a href="degerlendirme.html">Değerlendirme</a></li>
+        <li><a href="kampanyalar.html">Kampanyalar</a></li>
+        <li><a href="sss.html">SSS</a></li>
+        <li><a href="etkinlikler.html">Etkinlikler</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Sipariş Formu</h2>
+
+    <form id="siparisForm">
+      <label for="ad">Ad Soyad:</label>
+      <input type="text" id="ad" required>
+
+      <label for="yemek">Yemek Seçimi:</label>
+      <select id="yemek" required>
+        <option value="">Yemek Seçin</option>
+        <option value="Tavuk Izgara">Tavuk Izgara</option>
+        <option value="Adana Kebap">Adana Kebap</option>
+        <option value="Sütlaç">Sütlaç</option>
+        <option value="Mercimek Çorbası">Mercimek Çorbası</option>
+      </select>
+
+      <label for="adet">Adet:</label>
+      <input type="number" id="adet" min="1" value="1" required>
+
+      <label for="not">Not (isteğe bağlı):</label>
+      <textarea id="not" rows="3"></textarea>
+
+      <button type="submit">Siparişi Gönder</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Lezzet Lokantası</p>
+  </footer>
+
+  <script src="../scripts/myscript.js"></script>
+</body>
+</html>
